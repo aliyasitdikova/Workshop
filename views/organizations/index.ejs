@@ -1,0 +1,9 @@
+<h1>Organizations List</h1>
+<p>
+  <a class="btn btn-primary" href="/organizations/new">Create a new Organization</a>  
+</p>
+<ul>
+<% for (let organization of organizations) { %>
+<li><a href="/organizations/<%= organization.id %>"><%= organization.name %></a></li>
+<% } %>
+</ul>

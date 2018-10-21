@@ -1,0 +1,7 @@
+<h1><%= organization.name %></h1>
+<p><%= organization.description %></p>
+<p><a href="/organizations/<%= organization.id %>/edit" class="btn btn-primary">Edit</a></p>
+<form method="post" action="/organizations/<%= organization.id %>?_method=DELETE">
+<p><button class="btn btn-danger">Delete</button></p>
+</form>
+<p><a href="/organizations">&laquo; Back to list...</a></p>

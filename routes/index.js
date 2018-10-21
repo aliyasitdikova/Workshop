@@ -9,4 +9,10 @@ router.get('/', function(req, res, next) {
 router.get('/new-page', function(req, res, next) {
   res.render('new-page', { title: 'New Page!' });
 });
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'New Page!' });
+});
 module.exports = router;
+
+
